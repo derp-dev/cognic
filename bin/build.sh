@@ -14,8 +14,9 @@ if [[ $1 =~ ^[a-z]$ ]]; then
         # Compile the C file
         gcc -Wall -Wextra -o "${1}func.out" "${1}func.c" -v 2>&1
     else
-        echo "File does not exist."
-        exit 1
+        # If the file does not exist, create it and open in vi editor
+        touch "${1}func.c"
+        vi "${1}func.c"
     fi
 else
     echo "Invalid argument. Please provide a single lowercase letter."
