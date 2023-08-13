@@ -1,0 +1,49 @@
+====== gcc ======
+https://gcc.gnu.org/onlinedocs/gcc/
+C Language Options
+-ansi  -std=standard  -aux-info filename 
+-fno-asm  
+-fno-builtin  -fno-builtin-function  -fcond-mismatch 
+-ffreestanding  -fgimple  -fgnu-tm  -fgnu89-inline  -fhosted 
+-flax-vector-conversions  -fms-extensions 
+-foffload=arg  -foffload-options=arg 
+-fopenacc  -fopenacc-dim=geom 
+-fopenmp  -fopenmp-simd 
+-fpermitted-flt-eval-methods=standard 
+-fplan9-extensions  -fsigned-bitfields  -funsigned-bitfields 
+-fsigned-char  -funsigned-char -fstrict-flex-arrays[=n] 
+-fsso-struct=endianness
+
+Overall Options
+
+-c  -S  -E  -o file 
+-dumpbase dumpbase  -dumpbase-ext auxdropsuf 
+-dumpdir dumppfx  -x language  
+-v  -###  --help[=class[,…]]  --target-help  --version 
+-pass-exit-codes  -pipe  -specs=file  -wrapper  
+@file  -ffile-prefix-map=old=new  
+-fplugin=file  -fplugin-arg-name=arg  
+-fdump-ada-spec[-slim]  -fada-spec-parent=unit  -fdump-go-spec=file
+
+
+Diagnostic Message Formatting Options
+
+-fmessage-length=n  
+-fdiagnostics-plain-output 
+-fdiagnostics-show-location=[once|every-line]  
+-fdiagnostics-color=[auto|never|always]  
+-fdiagnostics-urls=[auto|never|always]  
+-fdiagnostics-format=[text|sarif-stderr|sarif-file|json|json-stderr|json-file]  
+-fno-diagnostics-show-option  -fno-diagnostics-show-caret 
+-fno-diagnostics-show-labels  -fno-diagnostics-show-line-numbers 
+-fno-diagnostics-show-cwe  
+-fno-diagnostics-show-rule  
+-fdiagnostics-minimum-margin-width=width 
+-fdiagnostics-parseable-fixits  -fdiagnostics-generate-patch 
+-fdiagnostics-show-template-tree  -fno-elide-type 
+-fdiagnostics-path-format=[none|separate-events|inline-events] 
+-fdiagnostics-show-path-depths 
+-fno-show-column 
+-fdiagnostics-column-unit=[display|byte] 
+-fdiagnostics-column-origin=origin 
+-fdiagnostics-escape-format=[unicode|bytes]

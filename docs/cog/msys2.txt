@@ -1,0 +1,25 @@
+I recommend obtaining MinGW through MSys2 [https://www.msys2.org/](https://www.msys2.org/)
+
+First install MSys2, then perform a full update by first updating the package database and updating pacman
+
+```
+pacman -SySu
+```
+
+After the update is done it will ask you to close the terminal without exiting to shell. Do so, then perform a full update by running
+
+```
+pacman -Su
+```
+
+after which you can install the mingw-w64 packages. Use
+
+```
+pacman -Ss mingw
+```
+
+to list all available packages. Install with
+
+```
+pacman -S ${PACKAGE_NAME}
+```
