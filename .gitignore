@@ -3,6 +3,7 @@ scoop/
 WezTerm/
 Telegram/
 .vscode/
+jup/
 
 <!-- Ignore environments -->
 *.venv
