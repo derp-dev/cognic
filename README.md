@@ -85,7 +85,7 @@ End Conversation/Return
 ```
 ```
 
-COGNIC is the (very far down the road) perceptual and 'brainstem'
+COGNIC is the (very far down the road) perceptual and thalamus and cerebral cortex-like duties for cognosis
 Step 1: Ask for Prompt
 .
 ├── script.py
