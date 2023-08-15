@@ -84,7 +84,7 @@ End Conversation/Return
     The conversation concludes, and the final prompt or the Return statement is provided, fulfilling the purpose of the meta-analyzed conversation.
 ```
 ```
-```
+
 COGNIC is the (very far down the road) perceptual and 'brainstem'
 Step 1: Ask for Prompt
 .
@@ -116,7 +116,7 @@ End Conversation/Return
 ├── script.py
 ├── final_compilation.py
 └── output_prompt.txt
-```    
+ 
 ```
 ```
 {"Architectural patterns and abstractions": 
