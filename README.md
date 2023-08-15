@@ -1,4 +1,4 @@
-# cognic
+# cognic - takes care of thalamus and cerebral cortex-like duties for cognosis.
 
 ```
 /* Analyze this prompt_object in a meta-capacity with the foreknowledge that it is not referring to YOU it is referring to a yet-to exist or be-instantiated unaffiliated chatbot:*/
@@ -85,7 +85,6 @@ End Conversation/Return
 ```
 ```
 
-COGNIC is the (very far down the road) perceptual and thalamus and cerebral cortex-like duties for cognosis
 Step 1: Ask for Prompt
 .
 ├── script.py
