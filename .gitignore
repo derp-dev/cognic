@@ -4,6 +4,7 @@ WezTerm/
 Telegram/
 .vscode/
 jup/
+py
 
 <!-- Ignore environments -->
 *.venv
