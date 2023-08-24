@@ -16,6 +16,7 @@ venv/
 *.sql
 *.sqlite
 .scratch/
+old/
 
 <!-- github apps -->
 LocalAI/

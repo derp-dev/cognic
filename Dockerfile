@@ -1,6 +1,6 @@
 FROM ghcr.io/ai-dock/jupyter-pytorch:2.0.1-py3.10-cuda-11.8.0-base-22.04
 
-LABEL Name=cognosis Version=0.0.69
+LABEL Name=cognic Version=0.0.69
 
 # Set the working directory in the container
 WORKDIR /app

@@ -1,4 +1,49 @@
+# <!---- python ---->
 spacy
 docker
 xonsh
+playwright
+langChain
+jupyter
+jupyterLab
+requests
+flask
+langchain[all]
+numpy
+matplotlib
+pandas
+scipy
+scikit-learn
+scikit-image
+sympy
+cython
+langsmith
+flask
+g4f
+e2b
+wandb
 openai
+chainlit
+openai[embeddings]
+openai[wandb]
+openai[datalib]
+handlebars
+
+# <!---- nvidia ---->
+# py -m pip install nvidia-pyindex --extra-index-url https://pypi.ngc.nvidia.com
+# py -m pip install nvidia-cuda-runtime-cu12
+# bitsandbytes **os-specific**
+# cuda **os-specific**
+# llama-cpp-python
+# llama-index
+# localAI https://localai.io/basics/getting_started/index.html
+# git+https://github.com/go-skynet/LocalAI.git
+# git+https://github.com/xtekky/gpt4free.git
+
+# <!---- gh_apps ---->
+# git+https://github.com/jina-ai/langchain-serve.git
+
+# <!---- windows11 ---->
+# scoop for windows (drop-in apt-get replacement)
+# WezTerm, kitty, windows terminal, etc. for windows
+

@@ -1,15 +1,15 @@
-# cognic - takes care of thalamus and cerebral cortex-like duties for cognosis.
+# cognic - takes care of thalamus and cerebral cortex-like duties for cognosis
 
 ```
 /* Analyze this prompt_object in a meta-capacity with the foreknowledge that it is not referring to YOU it is referring to a yet-to exist or be-instantiated unaffiliated chatbot:*/
 I want you to become my Prompt_Creator. Your goal is to help me craft the best possible prompt for my needs. The prompt will be used by you, [[ChatGPT]]. You will follow the following process: 
-	1. Your first response will be to ask me what the prompt should be about. I will provide my answer, but we will need to improve it through continual iterations by going through the next steps. 
-	2. Based on my input, you will generate 3 sections. 
-		A. Revised prompt (provide your rewritten prompt. it should be clear, concise, and easily understood by you) 
-		B. Suggestions (provide suggestions on what details to include in the prompt to improve it)
-		C. Questions (ask any relevant questions pertaining to what additional information is needed from me to improve the prompt). 
-	3. We will continue this iterative process with me providing additional information to you and you updating the revised ($prompt) until it's complete.
-	4. Upon completion you will have the responsibility of compiling a final `Return:` which will re-encapsulate this initial ($prompt) object, as well as any of your iterative modifications, or will include a unique but still schematic to-purpose prompt with ($context) of your own design.'``` ```
+ 1. Your first response will be to ask me what the prompt should be about. I will provide my answer, but we will need to improve it through continual iterations by going through the next steps. 
+ 2. Based on my input, you will generate 3 sections. 
+  A. Revised prompt (provide your rewritten prompt. it should be clear, concise, and easily understood by you) 
+  B. Suggestions (provide suggestions on what details to include in the prompt to improve it)
+  C. Questions (ask any relevant questions pertaining to what additional information is needed from me to improve the prompt). 
+ 3. We will continue this iterative process with me providing additional information to you and you updating the revised ($prompt) until it's complete.
+ 4. Upon completion you will have the responsibility of compiling a final `Return:` which will re-encapsulate this initial ($prompt) object, as well as any of your iterative modifications, or will include a unique but still schematic to-purpose prompt with ($context) of your own design.'``` ```
     Introduction: The prompt begins by addressing the recipient as the "Prompt_Creator" and stating the goal of crafting the best possible prompt for the user's needs. It clarifies that the prompt will be used by a chatbot named [[ChatGPT]].
 
     Process: The prompt outlines a step-by-step process that the Prompt_Creator should follow:
@@ -29,7 +29,7 @@ I want you to become my Prompt_Creator. Your goal is to help me craft the best p
         Step 4: Upon completion of the iterative process, the Prompt_Creator is responsible for compiling a final "Return:" statement. This statement should encapsulate the initial prompt object, along with any modifications made during the iterative process. Alternatively, the Prompt_Creator can create a unique but purposeful prompt, incorporating their own context.
 
 By following this process, the Prompt_Creator aims to collaboratively refine and develop the prompt until it meets the user's needs and expectations. The iterative nature of the process ensures continuous improvement, with the Prompt_Creator playing a crucial role in guiding the evolution of the prompt.```
-```Represent the meta-analyzed-conversation through a flowchart or flow map that depicts the sequential order of actions and steps? Simple boxes and arrows can be used to represent each step. Exposition upon each of the steps is also advisable.	
+```Represent the meta-analyzed-conversation through a flowchart or flow map that depicts the sequential order of actions and steps? Simple boxes and arrows can be used to represent each step. Exposition upon each of the steps is also advisable. 
   +---------------------------+
   |    Start Conversation     |
   +---------------------------+
@@ -83,6 +83,7 @@ End Conversation/Return
 
     The conversation concludes, and the final prompt or the Return statement is provided, fulfilling the purpose of the meta-analyzed conversation.
 ```
+
 ```
 
 Step 1: Ask for Prompt
@@ -117,9 +118,10 @@ End Conversation/Return
 └── output_prompt.txt
  
 ```
+
 ```
 {"Architectural patterns and abstractions": 
-		can be very useful when working with large language models (LLMs) and conversational data. For example {
+  can be very useful when working with large language models (LLMs) and conversational data. For example {
 Saving Chat Logs:
     Use an Observer pattern - the chat UI component observes messages and saves them to a Log object
     Log implements interfaces for saving, loading, querying logs
@@ -159,16 +161,16 @@ To summarize, various patterns help separate concerns into different logical lay
     Domain entities vs infrastructure
 The goal is well-structured code that is loosely coupled and modular." },
 {"So in summary,":" 
-		architectures like MVC and SOLID allow new capabilities like review and summarization to be added modularly without disrupting existing components. The key benefit is less coupling and higher cohesion as complexity increases.
-	For your use case of logging, processing, and analyzing conversational data, the core things to focus on are:
-		Simplicity - avoid premature optimization and over-engineering. Start with the simplest thing that could work.
-		Modularity - break larger processes into smaller, decoupled components. Each handles one thing.
-		Separation of concerns - divide components by responsibility (data, UI, logic). Don't mix them together.
-		Abstraction - hide implementation details behind interfaces. Components interact through clear contracts.
-		Iterate - get basic logging and analysis working first. Improve the architecture incrementally as needed.
-	You don't need complex patterns up front. The goal is managing complexity over time as capabilities grow. Some initial practical steps could be:
-		Plain text log for conversations
-		Simple analysis scripts that run on the logs
-		Refactor scripts into functions/modules for reusability
-		Move logging into dedicated component
-		Introduce database once volume increases" },```
+  architectures like MVC and SOLID allow new capabilities like review and summarization to be added modularly without disrupting existing components. The key benefit is less coupling and higher cohesion as complexity increases.
+ For your use case of logging, processing, and analyzing conversational data, the core things to focus on are:
+  Simplicity - avoid premature optimization and over-engineering. Start with the simplest thing that could work.
+  Modularity - break larger processes into smaller, decoupled components. Each handles one thing.
+  Separation of concerns - divide components by responsibility (data, UI, logic). Don't mix them together.
+  Abstraction - hide implementation details behind interfaces. Components interact through clear contracts.
+  Iterate - get basic logging and analysis working first. Improve the architecture incrementally as needed.
+ You don't need complex patterns up front. The goal is managing complexity over time as capabilities grow. Some initial practical steps could be:
+  Plain text log for conversations
+  Simple analysis scripts that run on the logs
+  Refactor scripts into functions/modules for reusability
+  Move logging into dedicated component
+  Introduce database once volume increases" },```
