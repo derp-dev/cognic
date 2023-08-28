@@ -1,4 +1,13 @@
 # <!---- python ---->
+torch
+transformers
+transformers[cuda]
+transformers[question-answering]
+transformers[text-generation]
+numpy
+matplotlib
+scikit-learn
+seaborn
 spacy
 docker
 xonsh
@@ -17,19 +26,20 @@ scikit-learn
 scikit-image
 sympy
 cython
-langsmith
 flask
 g4f
-e2b
 wandb
 openai
 chainlit
 openai[embeddings]
 openai[wandb]
 openai[datalib]
-handlebars
+cohere
+# xturing
+mysql
 
 # <!---- nvidia ---->
+# conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch-nightly -c nvidia //windows - rtx/geforce + CONDA 
 # py -m pip install nvidia-pyindex --extra-index-url https://pypi.ngc.nvidia.com
 # py -m pip install nvidia-cuda-runtime-cu12
 # bitsandbytes **os-specific**
