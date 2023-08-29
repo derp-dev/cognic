@@ -1,0 +1,43 @@
+*/
+Apologies for the confusion. It seems like you're running the command in a shell that uses the xonsh shell syntax. The error occurs because xonsh interprets the [[name]] and [[age]] as shell variables or commands, rather than passing them as command-line arguments to the Python script.
+
+To resolve this, you can either run the command in a different shell (e.g., Bash, PowerShell, CMD) or modify the command to prevent xonsh from interpreting the double square brackets. Here's an example using the CMD shell on Windows:
+shell
+
+python bracks3.py "Hello, [[name]]! Your age is [[age]]." ^< input.txt
+
+In this example, ^< is used to pass the input from the input.txt file as stdin to the Python script. Make sure to create the input.txt file and enter the variable arguments in separate lines, like this:
+
+name = Alice
+age = 30
+
+Alternatively, you can modify the code slightly to read the variable arguments from command-line instead of stdin. Here's an updated version of the main function:
+python
+
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: python bracks3.py <template> <key1=value1> <key2=value2> ...")
+        return
+
+    template_string = sys.argv[1]
+    variables = {}
+    for arg in sys.argv[2:]:
+        key, value = arg.strip().split("=", 1)
+        variables[key.strip()] = value.strip()
+
+    bracks_renderer = BracksRenderer(template_string, variables)
+    rendered_output = bracks_renderer.render()
+    print(rendered_output)
+
+Now you can run the command without relying on stdin:
+shell
+
+python bracks3.py "Hello, [[name]]! Your age is [[age]]." name=Alice age=30
+
+This should produce the expected output:
+
+Hello, Alice! Your age is 30.
+
+python bracks3.py "Hello, [[name]]! Your age is [[age]]." (cat input.txt)
+python bracks3.py "Hello, [[name]]! Your age is [[age]]." "name=Alice" "age=30"
+*/
