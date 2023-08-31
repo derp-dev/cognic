@@ -1,4 +1,3 @@
-import re
 from flask import Flask, request, jsonify, render_template, redirect, url_for
 from xonsh.main import main
 import os, sys, docker, re
