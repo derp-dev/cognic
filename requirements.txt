@@ -16,7 +16,6 @@ langChain
 jupyter
 jupyterLab
 requests
-flask
 langchain[all]
 numpy
 matplotlib
@@ -26,17 +25,19 @@ scikit-learn
 scikit-image
 sympy
 cython
-flask
 g4f
 wandb
 openai
-chainlit
 openai[embeddings]
 openai[wandb]
 openai[datalib]
 cohere
 # xturing
 mysql
+django[all]
+litellm
+mpi4py
+
 
 # <!---- nvidia ---->
 # conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch-nightly -c nvidia //windows - rtx/geforce + CONDA 
