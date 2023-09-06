@@ -1,0 +1,51 @@
+├── static
+|  ├── css
+|  ├── fonts
+|  ├── images
+|  ├── js
+│   └── htmx
+|  └── media
+|  └── script.js
+├── templates
+|  ├── index.html
+|  ├── pages
+|  └── partials
+|  └── htmx
+│   └── templates
+├── template_loader.py
+├── requirements.txt
+├── app.py
+├── models.py
+├── views.py
+├── routes.py
+└── settings.py
+
+```
+  template_loader.py is responsible for loading the templates and passing them to the Jinja2 environment.
+
+  htmx/templates contains the htmx template files.
+
+  htmx folder inside the static/js contains the htmx JavaScript library and any custom JavaScript code for your application.
+
+  Updated the "app.py" file with the htmx functionality using the `htmx_model` decorator.
+
+  Updated the `routes.py` file with routes for the htmx endpoints.
+
+  Updated the "settings.py" file with the configuration for the htmx functionality, including any necessary settings for AJAX calls and event handling.
+
+  Updated the "models.py" file with any necessary data models required by the htmx components in your application.
+
+  If you're using a database, updated the "requirements.txt" file with the necessary packages for database integration.
+
+  Updated the "views.py" file with the view functions that will handle the AJAX calls and update the templates accordingly.
+
+  The `settings.py` file should also include the necessary settings for the Jinja2 environment and the htmx integration.
+
+  Make sure to add the `static/js/script.js` file to the `index.html` page so that the htmx JavaScript library is loaded during runtime.
+
+  If you're using a template engine like Jinja2, remember to extend the base template in your `index.html` and include the necessary HTML elements for htmx.
+
+  When handling AJAX calls in the `views.py` file, remember to return a JSON response with the updated data.
+
+  If you're using a database, remember to update the `models.py` file with the necessary data models.
+```

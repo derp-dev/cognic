@@ -1,0 +1,11 @@
+# Use the base image
+FROM ghcr.io/chenhunghan/ialacol-cuda12:4d1fc25e74e8560a885c298827f010a2780980c3
+
+# Set the working directory
+WORKDIR /app
+
+# Copy any additional files or scripts required by your application
+COPY . /app
+
+# Set the entrypoint command to run your application
+CMD [ "python", "app.py" ]
